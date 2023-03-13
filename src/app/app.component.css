@@ -1,0 +1,438 @@
+.container-fluid2 {
+  padding: 0;
+  max-width: fit-content;
+  width: 100%;
+}
+
+.navigationBar {
+  /* background-image: ; */
+  /* width: 100vw; */
+  height: 90px;
+  /* background-color: #000000; */
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+
+  /* pointer-events: none; */
+  /* flex-direction: row-reverse; */
+}
+
+.navigationBar img {
+  /* height: 2.8125rem;  */
+  /* width: 10.4375rem; */
+ max-width: 145px;
+}
+/* https://www.color-hex.com/color-palette/22942 */
+/* https://www.youtube.com/watch?v=H9uAuKqqUkI&ab_channel=BCoder */
+/* https://www.youtube.com/watch?v=Ju6VSLKXrJg&ab_channel=mewtru */
+/* https://www.youtube.com/watch?v=AFPkkrNH1XY&ab_channel=SoftwareLab */
+.main-buttons {
+  margin-left: auto;
+} 
+:is(.outline):active {
+  background-color: rgba(0, 0, 0, 0.25) !important;
+  color: var(--netflixWhite) !important;
+
+  /* //need nested css */
+}
+
+:is(.outline):hover {
+  background-color: rgba(0, 0, 0, 0.25);
+  color: var(--netflixWhite);
+}
+
+
+
+.dropdown-menu {
+  background-color: #756d6d;
+  min-width: auto;
+  min-height: 1rem;
+}
+
+a:hover {
+  background-color: rgb(108, 108, 221);
+}
+
+/* English dropdown item */
+#dropdown-op1 {
+  margin-top: -8px;
+}
+
+/* Spanish dropdown item */
+#dropdown-op2 {
+  margin-bottom: -8px;
+}
+
+/* Dropdown item menu */
+.dropdown-item {
+  /* overflow: hidden;
+  line-height: 1.3em;
+  white-space: nowrap; */
+  padding: 0 1.75rem;
+  /* font-size: large; */
+  /* padding: 0 !important; */
+  font-size: small;
+  color: var(--netflixWhite);
+  /* background-color: rgba(0, 0, 0, .25); */
+}
+
+.all-buttons {
+  font-size: 0.875;
+  /* padding: 0.25rem 1.375rem; */
+  width: fit-content;
+  border-radius: 3px;
+}
+
+h1 {
+  font-size: 64px;
+  margin: 0px 95px;
+  /* margin: 0px; */
+  color: var(--netflixWhite);
+
+  padding: 0px;
+}
+
+h3,
+h4 {
+  color: var(--netflixWhite);
+  position: relative;
+  font-weight: bolder;
+}
+
+.top-middle {
+  margin: 190px 495px;
+
+  /* margin-top: 0px; */
+
+  text-align: center;
+  /* max-width: 800px; */
+  /* border: 5px solid red; */
+}
+
+#unlimitedMovies {
+  font-weight: 700;
+  /* margin: 0 auto; */
+  /* max-width: 640px; */
+  /* border: 5px solid red; */
+  margin: 0 auto;
+  overflow: auto;
+  display: inline-block;
+  overflow: hidden;
+  text-align: center;
+  align-content: flex-start;
+  /* 856.67 x 163.58 */
+  width: 856.67px;
+  height: 163.58px;
+}
+
+#watch-anywhere {
+  /* 843 x25.31 */
+  /* margin-bottom: 20px; */
+  /* margin: 0 auto; */
+  overflow: auto;
+  display: inline-block;
+  overflow: hidden;
+  text-align: center;
+  align-content: flex-start;
+  width: 843px;
+  height: 25.31px;
+}
+
+.tvArea {
+  border-top: 10px solid var(--netflixBorderBox);
+  /* padding-bottom: 500px; */
+  background-color: var(--netflixBlack);
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  max-width: 100%;
+  width: 100vw;
+  /* align-items: center; */
+}
+
+.right-div {
+  margin: 250px 710px 90px 10px;
+  /* padding-right: 0; */
+  width: 250px;
+  height: 250px;
+  position: relative;
+  max-width: 600px;
+
+  /* border: pink 5px solid; */
+}
+
+#download-section-left-div-image {
+  /* width: 50%;
+  margin-right: 0;
+  margin-left: 1000px;
+  overflow: hidden;
+  align-content: flex-end;
+  text-align: right; */
+  margin: 250px 710px 90px 10px;
+  width: 250px;
+  height: 250px;
+  position: relative;
+}
+
+.right-div-backwards {
+  /* border: 6px solid orange;
+  border-top: 10px solid var(--netflixBorderBox);
+  background-color: var(--netflixBlack);
+  /* display: flex; */
+  /* padding: 0; */
+  /* margin: 0 50%; */
+  /* margin-top: 50px; */
+  /* max-width: 100%; */
+  /* width: 75%; */
+
+  margin: 20px 710px 90px 10px;
+  width: 250px;
+  height: 250px;
+  position: relative;
+}
+
+#right-div-h1 {
+  width: 550px;
+  margin-top: 100px;
+  margin-bottom: 12px;
+  margin-left: 0;
+  padding-right: 0px;
+  overflow: hidden;
+  /* line-height: 1.12; */
+  font-size: 3.125rem;
+  /* border: red solid 5px; */
+}
+
+#right-div-h3 {
+  width: 480px;
+  height: 56px;
+  /* border: 3px solid white; */
+  overflow: hidden;
+}
+
+#download-animation-icon {
+  position: absolute;
+  background-color: white;
+  width: 1000px;
+}
+
+#phone-image {
+  /* z-index: 10; */
+
+  /* width: 20px; */
+  position: absolute;
+  border-radius: 30px;
+  background-color: green;
+  width: 900px;
+}
+
+.left-div {
+  margin-top: 210px;
+  margin-right: -450px;
+  margin-bottom: 90px;
+  margin-left: 250px;
+  padding-right: 0px;
+  /* border: red 5px solid; */
+  overflow: hidden;
+  /* flex: auto; */
+  /* justify-content: flex-end; */
+  align-content: flex-end;
+  text-align: left;
+  /* border: 5px solid yellow; */
+}
+
+#left-div-h1 {
+  /* text-align: left; */
+  line-height: 1.1;
+  font-size: 3.125rem;
+  margin: 0;
+  /* align-items: center; */
+  /* text-align: center; */
+  margin-bottom: 1rem;
+  /* margin-right: 50px; */
+  /* padding: 0; */
+}
+
+#left-div-h3 {
+  /* margin: 90px; */
+  margin-right: 90px;
+  height: 100px;
+  width: 50%;
+  font-size: 1.625rem;
+  text-align: left;
+  /* font-weight: 400; */
+  /* justify-content: left; */
+  /* border: red solid 5px; */
+}
+
+input {
+  height: 70px;
+  width: 580px;
+}
+
+.email-section{
+  /* max-width: 250px;
+  width: 250px; */
+   width: 856.67px;
+   margin: 0 auto;
+  overflow: auto;
+  display: inline-block;
+  overflow: hidden;
+  text-align: center;
+  align-content: flex-start;
+}
+
+#get_started {
+  color: var(--netflixWhite);
+  background-color: var(--netflixRed);
+  height: 70px;
+  width: 240px;
+  font-size: 22pt;
+  font-weight: bolder;
+  margin-top: 5px;
+  border-radius: 0% 5% 5% 0%;;
+}
+
+#email-input {
+  padding-top: 9px;
+}
+
+span {
+  height: 200px;
+  font-size: 14pt;
+}
+
+h3 {
+  font-size: 21.1px;
+}
+
+#readyToWatch {
+  margin: 0 auto;
+  overflow: auto;
+  display: inline-block;
+  overflow: hidden;
+  text-align: center;
+  /* align-content: flex-start; */
+  margin-bottom: auto;
+  width: 843px;
+  height: 25.31px;
+}
+
+.tvArea {
+  justify-content: center;
+}
+
+.tv-preview-div {
+  top: 1%;
+  left: 44.5%;
+  /* right: 1%; */
+  position: relative;
+  transform: translate(-70%, -80%);
+  max-width: 70%;
+  max-height: 54%;
+  width: 100%;
+  height: 100%;
+  padding-top: 10px;
+}
+
+.blank-tv {
+  position: absolute;
+  top: 19%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  margin-right: 1px;
+  width: 100%;
+}
+
+.tv-video {
+  width: 461px;
+}
+
+.download-section {
+  border-top: 10px solid var(--netflixBorderBox);
+  background-color: var(--netflixBlack);
+  display: flex;
+  /* margin: 0 auto; */
+
+  justify-content: center;
+  max-width: 100%;
+  border: 10px solid green;
+  /* justify-content: space-evenly; */
+}
+
+.watch-everywhere-section {
+  border-top: 10px solid var(--netflixBorderBox);
+  background-color: var(--netflixBlack);
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  max-width: 100%;
+}
+
+.kids-section {
+  border-top: 10px solid var(--netflixBorderBox);
+  background-color: var(--netflixBlack);
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  max-width: 100%;
+}
+
+.faq {
+  border-top: 10px solid var(--netflixBorderBox);
+  background-color: var(--netflixBlack);
+  text-align: center;
+}
+
+.faq-list-section {
+  width: 1833px;
+  height: 392px;
+  /* 1833 x 392 */
+  /* overflow: auto; */
+  display: inline-block;
+  overflow: hidden;
+  text-align: center;
+  align-content: flex-start;
+}
+
+li button {
+  background-color: var(--faqButtons);
+  color: var(--netflixWhite);
+  width: 23%;
+  max-width: 23%;
+  text-align: left;
+  margin-bottom: 5px;
+  padding-left: 20px;
+}
+
+li {
+  list-style-type: none;
+}
+
+p {
+  color: var(--netflixWhite);
+  margin-top: 2px;
+  margin: 0px 95px;
+  padding: 0px;
+}
+
+
+@media (max-width: 2250px) {
+
+.container-fluid2 {
+  /* padding: 0; */
+  max-height: fit-content;
+  max-width: 100%;
+}
+
+.main-buttons {
+  /* margin-left: auto;*/
+  /* max-width: 600px;  */
+  align-content: flex-end;
+} 
+.navigationBar img {
+ max-width: 145px;
+}
+
+}

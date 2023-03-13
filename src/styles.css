@@ -1,1 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root{
+  --netflixBlack: #000000;
+  --netflixRed: #e31513;
+  --netflixWhite: #fff;
+  --netflixBorderBox: #222222;
+  --faqButtons: #303030;
+}
+
+
+
+
+body{
+    /* background: 
+    url(./assets/Top_background_large.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 100vh;
+    position:relative; */
+
+
+
+
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.5)), url(./assets/Top_background_large.jpg);
+  /* background-size: auto; */
+  /* box-shadow: 10px 10px 5px #ccc; */
+  /* -moz-box-shadow: 10px 10px 5px #ccc;
+      -webkit-box-shadow: 10px 10px 5px #ccc;
+      -khtml-box-shadow: 10px 10px 5px #ccc; */
+    /* background-repeat:repeat; */
+  /* background-attachment: local; */
+  /* background-position: fill; */
+  /* object-fit: cover; */
+  /* width: 100%; */
+  /* font-family: Arial, Helvetica sans-serif; */
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+/* body::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+} */
+/* https://www.color-hex.com/color-palette/22942 */
+/* https://www.youtue.com/watch?v=H9uAuKqqUkI&ab_channel=BCoder */
