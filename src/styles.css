@@ -21,7 +21,9 @@ body{
 
 
 
-    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.5)), url(./assets/Top_background_large.jpg);
+    /* background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.5)), url(./assets/Top_background_large.jpg); */
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.5)), url(./assets/Top_background_large2.jpg);
+    background-position: 25% 75%;;
   /* background-size: auto; */
   /* box-shadow: 10px 10px 5px #ccc; */
   /* -moz-box-shadow: 10px 10px 5px #ccc;

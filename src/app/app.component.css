@@ -1,47 +1,83 @@
+/***** new price plan *****/
+
+.newPlanContainer {
+  background-color: white;
+}
+
+#price {
+  font-weight: 800;
+  margin-right: 18px;
+  font-size: 1.3rem;
+}
+
+.newPlanContent {
+  text-align: center;
+  margin-left: 20px;
+  padding: 10px;
+}
+
+#planStart {
+  color: black;
+}
+
+#new {
+  background-color: var(--netflixRed);
+  margin-right: 20px;
+  color: var(--netflixWhite);
+  padding: 5px;
+  border-radius: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1rem;
+  padding: 0.2rem 0.5rem;
+}
+
+#learnMore {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 2px;
+  text-decoration: none;
+}
+
+#greaterIcon {
+  /* font-size: 1.5rem; */
+  font-stretch: extra-condensed;
+}
+
+/*  */
 .container-fluid2 {
-  padding: 0;
+  padding: 0; 
   max-width: fit-content;
   width: 100%;
 }
 
+/***** navbar *****/
 .navigationBar {
-  /* background-image: ; */
-  /* width: 100vw; */
   height: 90px;
-  /* background-color: #000000; */
-  padding: 0px 20px;
+  padding: 20px 320px 0px 320px;
   display: flex;
   align-items: center;
-
-  /* pointer-events: none; */
-  /* flex-direction: row-reverse; */
 }
 
 .navigationBar img {
-  /* height: 2.8125rem;  */
-  /* width: 10.4375rem; */
- max-width: 145px;
+  max-width: 145px;
 }
-/* https://www.color-hex.com/color-palette/22942 */
-/* https://www.youtube.com/watch?v=H9uAuKqqUkI&ab_channel=BCoder */
-/* https://www.youtube.com/watch?v=Ju6VSLKXrJg&ab_channel=mewtru */
-/* https://www.youtube.com/watch?v=AFPkkrNH1XY&ab_channel=SoftwareLab */
+
+/* navbar buttons */
 .main-buttons {
   margin-left: auto;
-} 
+}
+
 :is(.outline):active {
   background-color: rgba(0, 0, 0, 0.25) !important;
   color: var(--netflixWhite) !important;
-
-  /* //need nested css */
 }
 
 :is(.outline):hover {
   background-color: rgba(0, 0, 0, 0.25);
   color: var(--netflixWhite);
 }
-
-
 
 .dropdown-menu {
   background-color: #756d6d;
@@ -99,36 +135,32 @@ h4 {
   font-weight: bolder;
 }
 
+/* .top-middle {
+  margin: 190px 495px;
+  text-align: center;
+} */
 .top-middle {
   margin: 190px 495px;
-
-  /* margin-top: 0px; */
-
   text-align: center;
-  /* max-width: 800px; */
-  /* border: 5px solid red; */
 }
 
 #unlimitedMovies {
-  font-weight: 700;
+  /* font-weight: 700; */
   /* margin: 0 auto; */
-  /* max-width: 640px; */
-  /* border: 5px solid red; */
-  margin: 0 auto;
-  overflow: auto;
-  display: inline-block;
-  overflow: hidden;
-  text-align: center;
-  align-content: flex-start;
+  /* overflow: auto; */
+  /* display: inline-block; */
+  /* overflow: hidden; */
+  /* text-align: center; */
+  /* align-content: flex-start; */
   /* 856.67 x 163.58 */
-  width: 856.67px;
-  height: 163.58px;
+  /* width: 856.67px; */
+  /* height: 163.58px; */
+}
+#unlimitedMovies {
 }
 
 #watch-anywhere {
   /* 843 x25.31 */
-  /* margin-bottom: 20px; */
-  /* margin: 0 auto; */
   overflow: auto;
   display: inline-block;
   overflow: hidden;
@@ -270,11 +302,11 @@ input {
   width: 580px;
 }
 
-.email-section{
+.email-section {
   /* max-width: 250px;
   width: 250px; */
-   width: 856.67px;
-   margin: 0 auto;
+  width: 856.67px;
+  margin: 0 auto;
   overflow: auto;
   display: inline-block;
   overflow: hidden;
@@ -290,7 +322,7 @@ input {
   font-size: 22pt;
   font-weight: bolder;
   margin-top: 5px;
-  border-radius: 0% 5% 5% 0%;;
+  border-radius: 0% 5% 5% 0%;
 }
 
 #email-input {
@@ -417,22 +449,20 @@ p {
   padding: 0px;
 }
 
-
 @media (max-width: 2250px) {
+  .container-fluid2 {
+    /* padding: 0; */
+    max-height: fit-content;
+    max-width: 100%;
+  }
 
-.container-fluid2 {
-  /* padding: 0; */
-  max-height: fit-content;
-  max-width: 100%;
-}
+  .main-buttons {
+    /* margin-left: auto;*/
+    /* max-width: 600px;  */
+    align-content: flex-end;
+  }
 
-.main-buttons {
-  /* margin-left: auto;*/
-  /* max-width: 600px;  */
-  align-content: flex-end;
-} 
-.navigationBar img {
- max-width: 145px;
-}
-
+  .navigationBar img {
+    max-width: 145px;
+  }
 }
