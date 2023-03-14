@@ -1,6 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
-
-:root{
+:root {
   --netflixBlack: #000000;
   --netflixRed: #e31513;
   --netflixWhite: #fff;
@@ -8,45 +6,17 @@
   --faqButtons: #303030;
 }
 
-
-
-
-body{
-    /* background: 
-    url(./assets/Top_background_large.jpg) no-repeat center center/cover;
-    width: 100%;
-    height: 100vh;
-    position:relative; */
-
-
-
-
-    /* background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.5)), url(./assets/Top_background_large.jpg); */
-    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.5)), url(./assets/Top_background_large2.jpg);
-    background-position: 25% 75%;;
-  /* background-size: auto; */
-  /* box-shadow: 10px 10px 5px #ccc; */
-  /* -moz-box-shadow: 10px 10px 5px #ccc;
-      -webkit-box-shadow: 10px 10px 5px #ccc;
-      -khtml-box-shadow: 10px 10px 5px #ccc; */
-    /* background-repeat:repeat; */
-  /* background-attachment: local; */
-  /* background-position: fill; */
+body {
+  font-family: "Martel Sans", sans-serif;
+  /* background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.5)), url(./assets/Top_background_large.jpg); */
+  background-image: linear-gradient(rgba(28, 27, 27, 0.8), rgb(10, 9, 9)),
+    url(./assets/Top_background_large2.jpg);
+    /* X(left/right)  Y(up/down) */
+  /* background-position: 99.9% 75.9%; */
   /* object-fit: cover; */
-  /* width: 100%; */
-  /* font-family: Arial, Helvetica sans-serif; */
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  background-position: 29.9% 75.9%;
+  /* background-size: 50% 0; */
+  
+  /* background-position: center; */
+  /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
 }
-
-/* body::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-
-} */
-/* https://www.color-hex.com/color-palette/22942 */
-/* https://www.youtue.com/watch?v=H9uAuKqqUkI&ab_channel=BCoder */

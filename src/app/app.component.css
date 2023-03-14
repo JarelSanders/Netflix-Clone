@@ -128,6 +128,12 @@ h1 {
   padding: 0px;
 }
 
+h6{
+    color: var(--netflixWhite);
+  position: relative;
+  font-weight: bolder;
+}
+
 h3,
 h4 {
   color: var(--netflixWhite);
@@ -140,11 +146,19 @@ h4 {
   text-align: center;
 } */
 .top-middle {
-  margin: 190px 495px;
+  /* margin: 190px 495px; */
+  /* margin: 190px 495px; */
+  margin-top: 190px;
+  margin-bottom: 190px;
+  margin-left: 195px;
+  margin-right: 195px;
   text-align: center;
 }
 
 #unlimitedMovies {
+    margin-bottom: 0;
+    font-family: 'Martel Sans', sans-serif;
+    font-size: 2.5rem;
   /* font-weight: 700; */
   /* margin: 0 auto; */
   /* overflow: auto; */
@@ -152,22 +166,22 @@ h4 {
   /* overflow: hidden; */
   /* text-align: center; */
   /* align-content: flex-start; */
-  /* 856.67 x 163.58 */
   /* width: 856.67px; */
+  /* width: 20%; */
   /* height: 163.58px; */
-}
-#unlimitedMovies {
 }
 
 #watch-anywhere {
   /* 843 x25.31 */
-  overflow: auto;
+  /* overflow: auto; */
   display: inline-block;
   overflow: hidden;
   text-align: center;
-  align-content: flex-start;
+  /* align-content: flex-start; */
+  color: var(--netflixWhite);
   width: 843px;
   height: 25.31px;
+  margin-top: 10px;
 }
 
 .tvArea {
@@ -298,35 +312,47 @@ h4 {
 }
 
 input {
-  height: 70px;
-  width: 580px;
+  /* height: 70px;
+  width: 580px; */
+  width: 350px;
+  /* background-color: transparent; */
+  height: 52px; 
+}
+
+
+::placeholder{
+  color: #bababa
 }
 
 .email-section {
-  /* max-width: 250px;
-  width: 250px; */
-  width: 856.67px;
-  margin: 0 auto;
-  overflow: auto;
-  display: inline-block;
-  overflow: hidden;
+  width: 30px;
+  display: inline;
   text-align: center;
-  align-content: flex-start;
 }
 
 #get_started {
   color: var(--netflixWhite);
   background-color: var(--netflixRed);
-  height: 70px;
-  width: 240px;
-  font-size: 22pt;
+  font-size: 18pt;
   font-weight: bolder;
   margin-top: 5px;
-  border-radius: 0% 5% 5% 0%;
+  border-radius: 8px;
+  height: 52px; 
 }
 
 #email-input {
   padding-top: 9px;
+  padding-left: 10px;
+  margin-right: 8px;
+  font-size: 10pt;
+  text-align: left;
+  border-radius: 8px ;
+  color: var(--netflixWhite);
+  background: rgba(0, 0, 0, 0.334);
+  width: 350px;
+  /* background-color: transparent; */
+  height: 52px; 
+  
 }
 
 span {
