@@ -17,7 +17,7 @@
 }
 
 #planStart {
-  color: black;
+  color: rgb(2, 2, 2);
 }
 
 #new {
@@ -512,7 +512,7 @@ input {
 }
 
 #left-div-h1-download {
-  width: 554.1px;
+  width: 694.1px;
   font-size: 2.3rem;
   /* border: 6px solid pink; */
 }
@@ -523,6 +523,50 @@ input {
   /* border: 6px solid green; */
 }
 
+#download-overlay {
+  /* background-color: red; */
+  background-color: var(--netflixBlack);
+  border: 5px solid var(--netflixBorderBox);
+  border-radius: 10px;
+  width: 390px;
+  height: 110px;
+  /* margin-bottom: 50px; */
+  transform: translate(37%, -134%);
+  /* border: 5px solid red; */
+  display: flex;
+  /* flex-wrap: nowrap;
+  justify-content: space-around; */
+  align-items: stretch;
+}
+
+#download-overlay-image {
+  margin-left: 15px;
+  margin-top: 5px;
+  margin-bottom: 7px;
+  height: 95px;
+}
+
+#downloading-stragner-text {
+  margin-top: -1px;
+  font-size: 0.9rem;
+  color: var(--netflixBlue);
+  /* position: relative; */
+  margin-left: 1px;
+  position: absolute;
+}
+
+#stranger-text {
+  color: var(--netflixWhite);
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+#download-icon-transform {
+  /* display: flex; */
+  position: relative;
+  height: 50px;
+  transform: translate(150%, 54%);
+}
 /****** section 4 download end ******/
 /*******************************/
 
