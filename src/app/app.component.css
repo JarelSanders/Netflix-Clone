@@ -498,7 +498,29 @@ input {
 }
 
 #left-div-download {
-  
+  margin-bottom: 80px;
+  margin-top: 80px;
+  /* border: 6px solid pink; */
+}
+
+#right-div-download {
+  padding-top: 240px;
+  /* border: 6px solid red; */
+  margin: 0;
+  overflow: hidden;
+  /* padding-right: 50px; */
+}
+
+#left-div-h1-download {
+  width: 554.1px;
+  font-size: 2.3rem;
+  /* border: 6px solid pink; */
+}
+
+#left-div-h3-download {
+  font-size: 1.5rem;
+  margin-top: 2px;
+  /* border: 6px solid green; */
 }
 
 /****** section 4 download end ******/
