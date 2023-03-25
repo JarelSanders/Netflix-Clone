@@ -2,6 +2,7 @@
 
 .newPlanContainer {
   background-color: white;
+
 }
 
 #price {
@@ -47,7 +48,7 @@
 
 /*  */
 .container-fluid2 {
-  padding: 0; 
+  padding: 0;
   max-width: fit-content;
   width: 100%;
 }
@@ -128,8 +129,8 @@ h1 {
   padding: 0px;
 }
 
-h6{
-    color: var(--netflixWhite);
+h6 {
+  color: var(--netflixWhite);
   position: relative;
   font-weight: bolder;
 }
@@ -156,9 +157,9 @@ h4 {
 }
 
 #unlimitedMovies {
-    margin-bottom: 0;
-    font-family: 'Martel Sans', sans-serif;
-    font-size: 2.5rem;
+  margin-bottom: 0;
+  font-family: "Martel Sans", sans-serif;
+  font-size: 2.5rem;
   /* font-weight: 700; */
   /* margin: 0 auto; */
   /* overflow: auto; */
@@ -190,7 +191,8 @@ h4 {
   background-color: var(--netflixBlack);
   display: flex;
   margin: 0 auto;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  justify-content: center;
   max-width: 100%;
   width: 100vw;
   /* align-items: center; */
@@ -237,7 +239,7 @@ h4 {
   position: relative;
 }
 
-#right-div-h1 {
+.right-div-h1 {
   width: 550px;
   margin-top: 100px;
   margin-bottom: 12px;
@@ -249,11 +251,11 @@ h4 {
   /* border: red solid 5px; */
 }
 
-#right-div-h3 {
-  width: 480px;
-  height: 56px;
+.right-div-h3 {
+  width: 750px;
+  height: 26px;
   /* border: 3px solid white; */
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 #download-animation-icon {
@@ -276,7 +278,7 @@ h4 {
   margin-top: 210px;
   margin-right: -450px;
   margin-bottom: 90px;
-  margin-left: 250px;
+  margin-left: 150px;
   padding-right: 0px;
   /* border: red 5px solid; */
   overflow: hidden;
@@ -292,6 +294,7 @@ h4 {
   line-height: 1.1;
   font-size: 3.125rem;
   margin: 0;
+  /* position: relative; */
   /* align-items: center; */
   /* text-align: center; */
   margin-bottom: 1rem;
@@ -303,7 +306,7 @@ h4 {
   /* margin: 90px; */
   margin-right: 90px;
   height: 100px;
-  width: 50%;
+  width: 75%;
   font-size: 1.625rem;
   text-align: left;
   /* font-weight: 400; */
@@ -311,17 +314,20 @@ h4 {
   /* border: red solid 5px; */
 }
 
+#test {
+  /* margin-left: 80px; */
+}
+
 input {
   /* height: 70px;
   width: 580px; */
   width: 350px;
   /* background-color: transparent; */
-  height: 52px; 
+  height: 52px;
 }
 
-
-::placeholder{
-  color: #bababa
+::placeholder {
+  color: #bababa;
 }
 
 .email-section {
@@ -337,7 +343,7 @@ input {
   font-weight: bolder;
   margin-top: 5px;
   border-radius: 8px;
-  height: 52px; 
+  height: 52px;
 }
 
 #email-input {
@@ -346,13 +352,12 @@ input {
   margin-right: 8px;
   font-size: 10pt;
   text-align: left;
-  border-radius: 8px ;
+  border-radius: 8px;
   color: var(--netflixWhite);
   background: rgba(0, 0, 0, 0.334);
   width: 350px;
   /* background-color: transparent; */
-  height: 52px; 
-  
+  height: 52px;
 }
 
 span {
@@ -376,21 +381,19 @@ h3 {
   height: 25.31px;
 }
 
-.tvArea {
-  justify-content: center;
-}
-
 .tv-preview-div {
   top: 1%;
   left: 44.5%;
   /* right: 1%; */
   position: relative;
   transform: translate(-70%, -80%);
+  /* max-width: 70%; */
   max-width: 70%;
   max-height: 54%;
   width: 100%;
   height: 100%;
   padding-top: 10px;
+  margin-left: 250px;
 }
 
 .blank-tv {
@@ -400,7 +403,9 @@ h3 {
   transform: translate(-50%, -50%);
   max-width: 100%;
   margin-right: 1px;
+  margin-left: 250px;
   width: 100%;
+  /* background: transparent; */
 }
 
 .tv-video {
@@ -419,14 +424,68 @@ h3 {
   /* justify-content: space-evenly; */
 }
 
+/* watch anywhere section start */
 .watch-everywhere-section {
-  border-top: 10px solid var(--netflixBorderBox);
+  /* border-top: 10px solid var(--netflixBorderBox);
   background-color: var(--netflixBlack);
   display: flex;
   margin: 0 auto;
   justify-content: space-between;
+  max-width: 100%; */
+
+  border-top: 10px solid var(--netflixBorderBox);
+  /* padding-bottom: 500px; */
+  background-color: var(--netflixBlack);
+  display: flex;
+  margin: 0 auto;
+  /* justify-content: space-between; */
+  justify-content: center;
   max-width: 100%;
+  width: 100vw;
+  /* align-items: center; */
+
 }
+
+.left-div-watch-everywhere{
+  padding-top: 150px;
+  margin-left: -180px;
+  /* border: red 8px solid; */
+}
+
+#right-div-watch-everywhere{
+  padding-top: 75px;
+  margin-left: 350px;
+  /* border: 5px solid green; */
+}
+
+#mac-video{
+   /* width: 461px; */
+   /* padding-left: -5000px; */
+  top: 1%;
+  right: 44.5%;
+  position: relative;
+  transform: translate(97%, -45%);
+  width: 400px;
+  height: 300px;
+
+}
+
+#mac-video-div{
+  /* top: 1%; */
+  /* right: 44.5%; */
+  position: relative;
+  /* transform: translate(7%, 80%);
+  overflow: hidden; */
+
+}
+
+#mac-image{
+  border: 5px solid red;
+  position: absolute;
+  margin-top: -460px;
+  margin-left: 100px;
+}
+/* watch anywhere section end */
 
 .kids-section {
   border-top: 10px solid var(--netflixBorderBox);

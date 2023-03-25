@@ -1,9 +1,13 @@
 <div class="container-fluid2">
   <div class="newPlanContainer">
     <div class="newPlanContent">
-      <span id = 'new'>new!</span>
-      <span id="planStart">Plans now start at <span id="price">$6.99.</span></span>
-      <button type="button" class="btn btn-link" id="learnMore">Learn More <span id="greaterIcon">></span></button>
+      <span id="new">new!</span>
+      <span id="planStart"
+        >Plans now start at <span id="price">$6.99.</span></span
+      >
+      <button type="button" class="btn btn-link" id="learnMore">
+        Learn More <span id="greaterIcon">></span>
+      </button>
     </div>
   </div>
   <div class="navigationBar">
@@ -46,7 +50,6 @@
         </span>
       </div>
     </div>
-    
   </div>
   <!-- section 2 enjoy tv-->
   <div class="tvArea">
@@ -57,7 +60,7 @@
         players and more.
       </h3>
     </div>
-    <div class="right-div">
+    <div class="right-div" id="test">
       <div class="tv-preview-div">
         <video
           class="tv-video"
@@ -74,34 +77,29 @@
       </div>
     </div>
   </div>
-  <!-- section 3 download -->
-  <div class="download-section">
-    <div id="download-section-left-div-image">
-      <div id="phone-image">
-        <!-- <img src="../assets/mobile-0819.jpg" alt="" class="TEST"> -->
-      </div>
-      <div id="download-animation-icon">
-        <!-- <img src="../assets/boxshot.png" alt="" /> -->
-      </div>
-      <div class="right-div-backwards">
-        <h1 id="right-div-h1">Download your shows to watch offline.</h1>
-        <h3 id="right-div-h3">
-          Save your favorites easily and always have something to watch.
-        </h3>
-      </div>
-    </div>
-  </div>
-  <!-- section 4 watch everywhere section -->
+
+  <!-- section 3 watch everywhere section -->
   <div class="watch-everywhere-section">
-    <div class="left-div">
-      <h1 id="left-div-h1">Watch everywhere.</h1>
-      <h3 id="left-div-h3">
+    <div class="left-div-watch-everywhere">
+      <div class="mac-video-div">
+        <video
+          id="mac-video"
+          name="Netflix Preview"
+          autoplay
+          loop
+          [muted]="true"
+        >
+          <source src="../assets/video2.m4v" type="video/mp4" />
+        </video>
+      </div>
+      <img src="../assets/mac.png" alt="" id="mac-image" />
+    </div>
+    <div id="right-div-watch-everywhere">
+      <h1 class="right-div-h1">Watch everywhere.</h1>
+      <h3 class="right-div-h3">
         Stream unlimited movies and TV shows on your phone, tablet, laptop, and
         TV without paying more.
       </h3>
-    </div>
-    <div class="right-div">
-      <img src="../assets/computer.png" alt="" />
     </div>
   </div>
   <!-- section 5 kids section -->
