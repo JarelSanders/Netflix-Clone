@@ -115,6 +115,13 @@ a:hover {
 /*****************************/
 
 /*** section 1 get started ***/
+.top-middle-container{
+
+}
+.container-fluid2{
+  width: 100%;
+  max-width:max-content
+}
 .top-middle {
   /* margin: 190px 495px; */
   /* margin: 190px 495px; */
@@ -123,6 +130,7 @@ a:hover {
   margin-left: 195px;
   margin-right: 195px;
   text-align: center;
+  border: 5px solid red;
 }
 
 #unlimitedMovies {
@@ -303,7 +311,7 @@ input {
   text-align: center;
 }
 
-#get_started {
+.get_started {
   color: var(--netflixWhite);
   background-color: var(--netflixRed);
   font-size: 18pt;
@@ -313,7 +321,7 @@ input {
   height: 52px;
 }
 
-#email-input {
+.email-input {
   padding-top: 9px;
   padding-left: 10px;
   margin-right: 8px;
@@ -382,7 +390,7 @@ input {
   /* justify-content: space-evenly; */
 }
 
-/* section 3 watch anywhere start */
+/* section 3 watch anywhere  */
 .watch-everywhere-section {
   border-top: 10px solid var(--netflixBorderBox);
   background-color: var(--netflixBlack);
@@ -498,7 +506,7 @@ input {
 }
 
 #left-div-download {
-  margin-bottom: 80px;
+  /* margin-bottom: 80px; */
   margin-top: 80px;
   /* border: 6px solid pink; */
 }
@@ -518,8 +526,9 @@ input {
 }
 
 #left-div-h3-download {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   margin-top: 2px;
+  font-weight: lighter;
   /* border: 6px solid green; */
 }
 
@@ -542,7 +551,7 @@ input {
 #download-overlay-image {
   margin-left: 15px;
   margin-top: 5px;
-  margin-bottom: 7px;
+  /* margin-bottom: 7px; */
   height: 95px;
 }
 
@@ -567,28 +576,44 @@ input {
   height: 50px;
   transform: translate(150%, 54%);
 }
-/****** section 4 download end ******/
+/****** section 5 download end ******/
 /*******************************/
 
 /******   section 6 FAQ   ******/
+#faq-header{
+  margin-top: 18px;
+  padding-top: 15px;
+  margin-bottom: -80px;
+}
 .faq {
   border-top: 10px solid var(--netflixBorderBox);
   background-color: var(--netflixBlack);
   text-align: center;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 780px;
+  min-height: auto;
+  /* margin-bottom: 15px; */
+  overflow: hidden;
+  
+}
+
+.faq-item{
+  /* border: 5px solid red; */
+  margin: 0 -100vw;
+  width: -500px;
+  /* height: 50px; */
 }
 
 .faq-list-section {
   width: 1833px;
   height: 392px;
-  /* 1833 x 392 */
-  /* overflow: auto; */
-  display: inline-block;
-  overflow: hidden;
+  /* overflow: hidden; */
   text-align: center;
-  align-content: flex-start;
+  /* align-content: flex-start; */
 }
 
-li button {
+li label {
   background-color: var(--faqButtons);
   color: var(--netflixWhite);
   width: 23%;
@@ -596,6 +621,8 @@ li button {
   text-align: left;
   margin-bottom: 5px;
   padding-left: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 li {
@@ -608,8 +635,126 @@ p {
   margin: 0px 95px;
   padding: 0px;
 }
-/******  section 5 FAQ end ******/
+
+.button-faq{
+  /* color: var(--netflixWhite); */
+  
+}
+
+.faq-list{
+  margin: 60px auto;
+  width: 100%;
+  max-width: 750px;
+
+}
+
+.faq-list li{
+  list-style: none;
+  width: -1000px;
+  padding: 5px;
+}
+
+.faq-list li label {
+  /* display: flex; */
+  align-items: center;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  background: #303030;
+  margin-bottom: 2px;
+  cursor: pointer;
+}
+.faq-list .content{
+  background-color: var(--faqButtons);
+  text-align: left;
+  padding: 0 20px;
+  max-height: 0;
+  /* width: 100%; */
+  overflow: hidden;
+  /* margin-left: 600px; */
+
+}
+.content{
+  /* border: 5px solid green; */
+      align-items: center;
+      text-align: left;
+  justify-content: center;
+   /* width: 160px; */
+   margin: -1px 700px 0 700px;
+   padding: 0 500px;
+   overflow-y: hidden;
+
+}
+.faq-list input[type="radio"]:checked + label + .content{
+  /* max-height: 800px; */
+  padding: 30px 20px;
+  /* width: -100px; */
+margin: 0 1690px auto 1690px;
+width: -900px;
+max-width: -900px;
+max-height: 75rem;
+overflow-y: hidden;
+text-align: left;
+/* border: 5px solid pink; */
+border-top: 15px solid var(--faqButtons);
+}
+
+label::after{
+  content: '+';
+  font-size: 34px;
+  position: relative;
+  /* right: 1px; */
+  /* left: 1000px; */
+}
+
+input[type="radio"]{
+  display: none;
+}
+
+.content-para{
+  margin-left: auto;
+  margin-bottom: auto;
+}
+
+#learn-more{
+  text-decoration:none; 
+    cursor:pointer;
+    color: var(--netflixWhite);
+    /* border-bottom: 1px solid var(--netflixWhite); */
+    padding-bottom: -10px;
+    text-decoration: underline;
+}
+#learn-more:link{
+  color: var(--netflixWhite);
+}
+:is(#learn-more):hover{
+  background-color: var(--faqButtons);
+    text-decoration:none; 
+    cursor:pointer;
+    color: var(--netflixWhite) !important;
+}
+
+#content-para-ad-support{
+  font-size: 0.9rem;
+}
+/******  section 6 FAQ end ******/
 /*******************************/
+
+
+
+/******   section 7 contact   ******/
+.contact{
+  border-top: 10px solid var(--netflixBorderBox);
+  background-color: var(--netflixBlack);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+
+/******  section 7 contact end ******/
+/*******************************/
+
 
 .all-buttons {
   font-size: 0.875;
@@ -658,11 +803,11 @@ h3 {
   /* font-size: 21.1px; */
 }
 
-@media (max-width: 2250px) {
+@media (max-width: 100%) {
   .container-fluid2 {
     /* padding: 0; */
-    max-height: fit-content;
-    max-width: 100%;
+    /* max-height: fit-content; */
+    /* max-width: 100%; */
   }
 
   .main-buttons {

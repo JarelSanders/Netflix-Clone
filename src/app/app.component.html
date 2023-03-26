@@ -14,7 +14,7 @@
     <img src="../assets/logo.png" alt="" />
     <div class="main-buttons btn-group">
       <button
-        class="btn-outline-light dropdown-toggle mr-4 outline nohover all-buttons"
+        class="btn-outline-light dropdown-toggle mr-4 outline nohover all-buttons-navbar"
         data-toggle="dropdown"
         id="language"
         (click)="language()"
@@ -29,7 +29,9 @@
           >Español</a
         >
       </div>
-      <button class="btn btn-danger mr-4 btn-sm all-buttons">Sign-in</button>
+      <button class="btn btn-danger mr-4 btn-sm all-buttons-navbar">
+        Sign-in
+      </button>
     </div>
   </div>
   <!-- section 1 get started-->
@@ -44,8 +46,8 @@
       <br />
       <div class="email-section">
         <span id="email-form">
-          <input type="email" placeholder="Email address" id="email-input" />
-          <button id="get_started">Get Started ></button>
+          <input type="email" placeholder="Email address" class="email-input" />
+          <button class="get_started">Get Started ></button>
         </span>
       </div>
     </div>
@@ -104,7 +106,7 @@
   <div id="kids-section">
     <div id="left-div-kids">
       <!-- <img src="../assets/create_profile.png" alt="" /> -->
-            <h2 id="left-div-h1-kids">Create profiles for kids.</h2>
+      <h2 id="left-div-h1-kids">Create profiles for kids.</h2>
       <p id="left-div-h3-kids">
         Send kids on adventures with their favorite characters in a space made
         just for them—free with your membership.
@@ -112,29 +114,31 @@
     </div>
     <div id="right-div-kids">
       <img src="../assets/create_profile.png" alt="" />
-
     </div>
   </div>
 
-   <!-- section 5 download -->
+  <!-- section 5 download -->
   <div id="download-section">
     <div id="left-div-download">
-     <img src="../assets/mobile-0819.jpg" alt="" />
-     <div id="download-overlay">
-      <img src="../assets/boxshot.png" id="download-overlay-image" alt="">
-      <span id="stranger-text">Stranger Things<p id="downloading-stragner-text">Downloading...</p></span>
-      <!-- <p id="downloading-stragner">Downloading...</p> -->
-      
-      <img src="../assets/download-icon.gif" alt="" id="download-icon-transform">
-     </div>
+      <img src="../assets/mobile-0819.jpg" alt="" />
+      <div id="download-overlay">
+        <img src="../assets/boxshot.png" id="download-overlay-image" alt="" />
+        <span id="stranger-text"
+          >Stranger Things
+          <p id="downloading-stragner-text">Downloading...</p></span
+        >
+        <!-- <p id="downloading-stragner">Downloading...</p> -->
+
+        <img
+          src="../assets/download-icon.gif"
+          alt=""
+          id="download-icon-transform"
+        />
+      </div>
     </div>
     <div id="right-div-download">
-      
-       <h2 id="left-div-h1-download">Download your shows to watch offline.</h2>
-      <p id="left-div-h3-download">
-        Only available on ad-free plans.
-      </p>
-
+      <h2 id="left-div-h1-download">Download your shows to watch offline.</h2>
+      <p id="left-div-h3-download">Only available on ad-free plans.</p>
     </div>
   </div>
 
@@ -142,26 +146,117 @@
   <div class="faq">
     <!-- <h1>Frequently Asked Questions</h1> -->
     <div class="faq-list-section">
-      <p>Frequently Asked Questions</p>
+      <h1 id="faq-header">Frequently Asked Questions</h1>
       <br />
       <ul class="faq-list">
         <li class="faq-item">
-          <button>What is Netflix?</button>
+          <input type="radio" name="faq-list" id="first" (click)="radiobtn()"/>
+          <label class="button-faq" for="first">What is Netflix?</label>
+          <div class="content">
+            <p class="content-para">
+              Netflix is a streaming service that offers a wide variety of
+              award-winning TV shows, movies, anime, documentaries, and more on
+              thousands of internet-connected devices. 
+              <br>
+              <br> 
+              You can watch as much as
+              you want, whenever you want – all for one low monthly price.
+              There's always something new to discover and new TV shows and
+              movies are added every week!
+            </p>
+          </div>
         </li>
         <li class="faq-item">
-          <button>How much does Netflix cost?</button>
+          <input type="radio" name="faq-list" id="second" />
+          <label for="second" class="button-faq">
+            How much does Netflix cost?
+          </label>
+          <div class="content">
+            <p class="content-para">
+              Watch Netflix on your smartphone, tablet, Smart TV, laptop, or
+              streaming device, all for one fixed monthly fee. Plans range from
+              $6.99 to $19.99 a month. No extra costs, no contracts.
+            </p>
+          </div>
         </li>
         <li class="faq-item">
-          <button>Where can I watch?</button>
+          <input type="radio" name="faq-list" id="third" />
+          <label for="third" class="button-faq">
+            What’s different on an ad-supported plan?
+          </label>
+          <div class="content">
+            <p class="content-para" id="content-para-ad-support">
+              An ad-supported plan is a great way to enjoy movies and TV shows
+              at a lower price. You can stream your favorites with limited ad
+              breaks (some location and device restrictions apply). Downloads
+              are not supported and a limited number of movies and TV shows are
+              not available due to licensing restrictions. <a href="#" target="_blank" rel="noopener noreferrer" id="learn-more">Learn more.</a> 
+            </p>
+          </div>
         </li>
         <li class="faq-item">
-          <button>How do I cancel?</button>
+          <input type="radio" name="faq-list" id="fourth" />
+          <label class="button-faq" for="fourth"> Where can I watch? </label>
+          <div class="content">
+            <p class="content-para">
+              Watch anywhere, anytime. Sign in with your Netflix account to
+              watch instantly on the web at netflix.com from your personal
+              computer or on any internet-connected device that offers the
+              Netflix app, including smart TVs, smartphones, tablets, streaming
+              media players and game consoles.
+              <br>
+              <br> 
+              You can also download your favorite shows with the iOS, Android, or Windows 10 app. Use
+              downloads to watch while you're on the go and without an internet
+              connection. Take Netflix with you anywhere.
+            </p>
+          </div>
         </li>
         <li class="faq-item">
-          <button>What can I watch on Netflix?</button>
+          <input type="radio" name="faq-list" id="fifth" />
+          <label class="button-faq" for="fifth">
+            How do I cancel?
+          </label>
+          <div class="content">
+            <p class="content-para">
+              Netflix is flexible. There are no pesky contracts and no
+              commitments. You can easily cancel your account online in two
+              clicks. There are no cancellation fees – start or stop your
+              account anytime.
+            </p>
+          </div>
         </li>
         <li class="faq-item">
-          <button>Is Netflix good for kids?</button>
+          <input type="radio" name="faq-list" id="sixth" />
+          <label class="button-faq" for="sixth">
+            What can I watch on Netflix?
+          </label>
+          <div class="content">
+            <p class="content-para">
+              Netflix has an extensive library of feature films, documentaries,
+              TV shows, anime, award-winning Netflix originals, and more. Watch
+              as much as you want, anytime you want.
+            </p>
+          </div>
+        </li>
+        <li class="faq-item">
+          <input type="radio" name="faq-list" id="seventh" />
+          <label class="button-faq" for="seventh">
+            Is Netflix good for kids?
+          </label>
+          <div class="content">
+            <p class="content-para">
+              The Netflix Kids experience is included in your membership to give
+              parents control while kids enjoy family-friendly TV shows and
+              movies in their own space. 
+              <br>
+              <br>
+              Kids profiles come with PIN-protected
+              parental controls that let you restrict the maturity rating of
+              content kids can watch and block specific titles you don’t want
+              kids to see.
+            </p>
+          </div>
         </li>
       </ul>
       <p id=" ">
@@ -169,12 +264,22 @@
       </p>
       <br />
       <span
-        ><input type="email" name="" id="" placeholder="Email address" /><button
-          id="get_started"
-        >
-          Get Started >
-        </button></span
+        ><input
+          type="email"
+          name=""
+          id=""
+          class="email-input"
+          placeholder="Email address"
+        /><button class="get_started">Get Started ></button></span
       >
     </div>
+  </div>
+
+  <!-- section 7 contact -->
+  <div class="contact">
+    opedifujdbvoapikjsdfhubvojsadhkfb vsadfvsedfbvwsebwsetbwertbwetrbhwpoetrkbn
+    w;[e'lrtkbn [powerikstnb]
+
+    <img src="../assets/computer.png" alt="" />
   </div>
 </div>
