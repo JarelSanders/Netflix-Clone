@@ -4,16 +4,15 @@
   --netflixWhite: #fff;
   --netflixBorderBox: #222222;
   --faqButtons: #303030;
-  --netflixBlue: #0a3ac5
+  --netflixBlue: #0a3ac5;
 }
 
 body {
   font-family: "Martel Sans", sans-serif;
-  /* background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.5)), url(./assets/Top_background_large.jpg); */
   background-image: linear-gradient(rgba(28, 27, 27, 0.8), rgb(10, 9, 9)),
     url(./assets/Top_background_large2.jpg);
-
-  background-position: 29.9% 75.9%;
- width:fit-content;
- max-width: max-content;
+  background-color: var(--netflixBlack);
+  background-size: contain;
+  background-position: center;
+  background-position: 129.9% 175.9%;
 }
