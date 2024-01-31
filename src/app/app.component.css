@@ -1,50 +1,3 @@
-/***** new price plan *****/
-
-.newPlanContainer {
-  background-color: white;
-}
-
-#price {
-  font-weight: 800;
-  margin-right: 18px;
-  font-size: 1.3rem;
-}
-
-.newPlanContent {
-  text-align: center;
-  margin-left: 20px;
-  padding: 10px;
-}
-
-#planStart {
-  color: rgb(2, 2, 2);
-}
-
-#new {
-  background-color: var(--netflixRed);
-  margin-right: 20px;
-  color: var(--netflixWhite);
-  padding: 5px;
-  border-radius: 17px;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 800;
-  font-size: 1rem;
-  padding: 0.2rem 0.5rem;
-}
-
-#learnMore {
-  font-weight: 600;
-  font-size: 1.1rem;
-  margin-bottom: 2px;
-  text-decoration: none;
-}
-
-#greaterIcon {
-  font-stretch: extra-condensed;
-}
-/***** new price plan end*****/
-/*****************************/
 
 .container-fluid2 {
   padding: 0;
@@ -55,7 +8,7 @@
 /***** navbar *****/
 .navigationBar {
   height: 90px;
-  padding: 20px 320px 0px 320px;
+  padding: 0 100px 0 100px;
   display: flex;
   align-items: center;
 }
@@ -66,6 +19,10 @@
 
 .main-buttons {
   margin-left: auto;
+}
+
+.clear-button{
+  margin-right: 20px;
 }
 
 :is(.outline):active {
@@ -88,9 +45,16 @@ a:hover {
   background-color: rgb(108, 108, 221);
 }
 
+.clear-button{
+  background-color: #1b1b1b;
+  color: var(--netflixWhite)
+
+}
+
 /* English dropdown item */
 #dropdown-op1 {
   margin-top: -8px;
+  width: 122px;
 }
 
 /* Spanish dropdown item */
@@ -108,12 +72,19 @@ a:hover {
 /*****************************/
 
 /*** section 1 get started ***/
-.top-middle-container {
+label{
+  color: var(--netflixWhite);
 }
+
+input{
+  border: 1px solid var(--netflixBorderBox);
+}
+
 .container-fluid2 {
   width: 100%;
   max-width: max-content;
 }
+
 .top-middle {
   margin-top: 190px;
   margin-bottom: 190px;
@@ -143,7 +114,6 @@ a:hover {
 }
 
 .tvArea {
-  border-top: 10px solid var(--netflixBorderBox);
   background-color: var(--netflixBlack);
   display: flex;
   margin: 0 auto;
@@ -158,8 +128,6 @@ a:hover {
   height: 250px;
   position: relative;
   max-width: 600px;
-
-  /* border: pink 5px solid; */
 }
 
 #download-section-left-div-image {
@@ -200,7 +168,6 @@ a:hover {
 #phone-image {
   position: absolute;
   border-radius: 30px;
-  background-color: green;
   width: 900px;
 }
 
@@ -233,9 +200,14 @@ a:hover {
 
 /***  Price Plan Start       ***/
 .priceInfo *{
-  /* background-color: orange; */
   margin-left: 0;
   margin-bottom: 3px;
+}
+
+#ads{
+  font-size: 13px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 #pricePlan{
@@ -252,68 +224,69 @@ a:hover {
         #000413 100% );
   box-shadow: 0px -8px 25px rgba(0, 0, 0, 0.5);
   border-radius: 4px;
-  /* margin: 0 74px; */
   color: white;
-  /* padding: 22px; */
   padding-bottom: -500px;
  
 }
+
 #popcornImage{
-  /* height: 100px;4 */
+  height: 100px;
 }
+
 .popcorn{
-  /* border: 5px solid black; */
-  /* top: 100px !important; */
-   /* margin-top: 0px; */
-   /* height: 50px; */
-   margin-top: 20px;
+  margin-top: 20px;
 }
 
 .priceInfo{
-  /* border: 5px solid green; */
   margin-left: 0;
   padding-left: 0;
   padding-top: 35px;
-   
 }
 /*******************************/
-
-input {
-  width: 350px;
-  height: 52px;
-}
 
 ::placeholder {
   color: #bababa;
 }
 
 .email-section {
-  width: 30px;
+  /* width: 30px; */
   display: inline;
   text-align: center;
+  margin-right: 500px;
 }
 
 .get_started {
   color: var(--netflixWhite);
   background-color: var(--netflixRed);
-  font-size: 18pt;
+  font-size: 13pt;
   font-weight: bolder;
-  margin-top: 5px;
   border-radius: 8px;
   height: 52px;
+  width: 185px;
 }
 
 .email-input {
-  padding-top: 9px;
-  padding-left: 10px;
-  margin-right: 8px;
-  font-size: 10pt;
   text-align: left;
   border-radius: 8px;
   color: var(--netflixWhite);
   background: rgba(0, 0, 0, 0.334);
   width: 350px;
   height: 52px;
+  margin-right: 10px;
+  border: 1px solid #5f5e5e;
+}
+
+.email{
+  display: flex;
+  margin-left: 459px;
+  margin-right: 00px;
+  margin-top: -5px;
+
+}
+
+.email-input-floating{
+  font-size: 10pt;
+  margin-right: 100px;
 }
 
 #readyToWatch {
@@ -361,7 +334,6 @@ input {
   display: flex;
   justify-content: center;
   max-width: 100%;
-  border: 10px solid green;
 }
 
 /* section 3 watch anywhere  */
@@ -521,27 +493,25 @@ input {
   padding-top: 15px;
   margin-bottom: -80px;
 }
+
 .faq {
   border-top: 10px solid var(--netflixBorderBox);
   background-color: var(--netflixBlack);
   text-align: center;
   display: flex;
   justify-content: center;
-  padding-bottom: 780px;
+  /* padding-bottom: 380px; */
   min-height: auto;
   overflow: hidden;
 }
 
 .faq-item {
-  /* border: 5px solid red; */
   margin: 0 -100vw;
   width: -500px;
-  /* height: 50px; */
 }
 
 .faq-list-section {
   width: 1833px;
-  height: 392px;
   text-align: center;
 }
 
@@ -555,6 +525,12 @@ li label {
   padding-left: 20px;
   padding-bottom: 10px;
   padding-top: 10px;
+}
+
+#email2{
+  margin-left: 650px;
+  margin-bottom: auto;
+  padding-bottom: auto;
 }
 
 li {
@@ -589,15 +565,16 @@ p {
   margin-bottom: 2px;
   cursor: pointer;
 }
+
 .faq-list .content {
   background-color: var(--faqButtons);
   text-align: left;
   padding: 0 20px;
   max-height: 0;
-  /* width: 50vw; */
   margin-left: 500px;
   overflow: hidden;
 }
+
 .content {
   align-items: center;
   text-align: left;
@@ -606,6 +583,7 @@ p {
   padding: 0 500px;
   overflow-y: hidden;
 }
+
 .faq-list input[type="radio"]:checked + label + .content {
   padding: 30px 20px;
   margin: 0 1690px auto 1690px;
@@ -617,16 +595,21 @@ p {
   border-top: 15px solid var(--faqButtons);
 }
 
-label::after {
+.faqDropdown::after {
   display: flex;
   content: "+";
   font-size: 34px;
   position: relative;
   right: 1px;
   justify-content: flex-end;
-  margin-top: -49px;
-  margin-bottom: -50px;
-  padding-bottom: 45px;
+  margin-top: -40px;
+  margin-bottom: -60px;
+  padding-bottom: 45px;  
+}
+
+/* Change content to 'x' when the corresponding radio button is checked */
+.faqDropdown:checked + .button-faq::after {
+  content: "x";
 }
 
 input[type="radio"] {
@@ -634,8 +617,7 @@ input[type="radio"] {
 }
 
 .content-para {
-  margin-left: auto;
-  margin-bottom: auto;
+  margin: auto;
 }
 
 #learn-more {
@@ -650,6 +632,7 @@ input[type="radio"] {
 #learn-more:link {
   color: var(--netflixWhite);
 }
+
 :is(#learn-more):hover {
   background-color: var(--faqButtons);
   text-decoration: none;
@@ -674,6 +657,7 @@ input[type="radio"] {
   margin-right: auto;
   margin-bottom: 0;
   margin-left: auto;
+  padding-top: 45px;
   justify-content: center;
   max-width: 100%;
   width: 100vw;
@@ -700,9 +684,11 @@ input[type="radio"] {
   padding-bottom: 100px;
   padding-top: 50px;
 }
+
 li a:hover {
   background-color: var(--netflixBlack);
 }
+
 li a {
   text-decoration: underline;
 
@@ -729,33 +715,36 @@ li a {
 #phone-number {
   color: var(--netflixWhite);
   text-decoration: underline;
-  /* cursor: pointer; */
+}
+
+
+/* English dropdown item */
+#dropdown-op3 {
+  margin-top: -8px;
+}
+
+/* Spanish dropdown item */
+#dropdown-op4 {
+  margin-bottom: -8px;
 }
 /******  section 7 contact end ******/
 /*******************************/
 
 .all-buttons {
   font-size: 0.875;
-  /* padding: 0.25rem 1.375rem; */
   width: fit-content;
   border-radius: 3px;
 }
 
 h1 {
-  /* font-size: 64px; */
   margin: 0px 95px;
-  /* margin: 0px; */
   color: var(--netflixWhite);
-
   padding: 0px;
 }
 
 h2 {
-  /* font-size: 64px; */
   margin: 0px 95px;
-  /* margin: 0px; */
   color: var(--netflixWhite);
-
   padding: 0px;
 }
 
@@ -763,23 +752,9 @@ h3,
 h4 {
   color: var(--netflixWhite);
   position: relative;
-  /* font-weight: bolder; */
 }
 
 span {
   height: 200px;
   font-size: 14pt;
 }
-
-/* @media (max-width: 100%) {
-
-
-  .main-buttons {
-
-    align-content: flex-end;
-  }
-
-  .navigationBar img {
-    max-width: 145px;
-  }
-} */

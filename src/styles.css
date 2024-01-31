@@ -25,9 +25,10 @@ body {
   background-color: var(--netflixBlack);
   /* background-size: contain; */
   /* background-position: center;*/
-   background-position: 10% 7000%;  
+   /* background-position: 150% 10%;   */
      object-fit:cover;
    /* object-position:5% 5%; */
-   background-size: 103%;
+   /* background-size: 100%; */
+   background-position: center top;
    /* z-index: 500; */
 }

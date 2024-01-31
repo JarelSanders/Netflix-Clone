@@ -1,39 +1,21 @@
+
 <div class="container-fluid2">
-  <!-- <div class="newPlanContainer">
-    <div class="newPlanContent">
-      <span id="new">new!</span>
-      <span id="planStart"
-        >Plans now start at <span id="price">$6.99.</span></span
-      >
-      <button type="button" class="btn btn-link" id="learnMore">
-        Learn More <span id="greaterIcon">></span>
-      </button>
-    </div>
-  </div> -->
   <div class="navigationBar">
     <img src="../assets/logo.png" alt="" />
     <div class="main-buttons btn-group">
-      <button
-        class="btn-outline-light dropdown-toggle mr-4 outline nohover all-buttons-navbar"
-        data-toggle="dropdown"
-        id="language"
-        (click)="language()"
-      >
-        <i class="fa fa-globe"></i> English
+      <button class="btn btn-light  clear-button" data-toggle="dropdown" id="language">
+        <i class="fa fa-globe"></i> English &#9660;	
       </button>
       <div class="dropdown-menu">
-        <a href="#" class="dropdown-item" lang="en" id="dropdown-op1"
-          >English</a
-        >
-        <a href="#" class="dropdown-item" lang="es" id="dropdown-op2"
-          >Español</a
-        >
+        <a href="#" class="dropdown-item" lang="en" id="dropdown-op1">English</a>
+        <a href="#" class="dropdown-item" lang="es" id="dropdown-op2">Español</a>
       </div>
       <button class="btn btn-danger mr-4 btn-sm all-buttons-navbar">
         Sign-in
       </button>
     </div>
   </div>
+
   <!-- section 1 get started-->
   <div class="top-middle-container">
     <div class="top-middle">
@@ -46,25 +28,26 @@
       <br />
       <div class="email-section">
         <span id="email-form">
-          <input type="email" placeholder="Email address" class="email-input" />
+        <div class="form-floating mb-2 email">
+          <input type="email" class="form-control email-input" id="floatingInput" placeholder="Email address">
+          <label for="floatingInput" class="email-input-floating">Email address</label>
           <button class="get_started">Get Started ></button>
+        </div>
         </span>
       </div>
     </div>
   </div>
   <div id="pricePlan">
-    <!-- <h1>;klj</h1> -->
     <div class="popcorn">
       <img id= 'popcornImage' src="../assets/popcorn.png" alt="popcorn">
     </div>
     <div class="priceInfo">
       <p>The Netflix you love for just $6.99.</p>
-      <p>Get the Standard with ads plan.</p>
+      <p id="ads">Get the Standard with ads plan.</p>
       <a href="http://" target="_blank" rel="noopener noreferrer"> Learn More   ></a>
     </div>
- 
-   
   </div>
+
   <!-- section 2 enjoy tv-->
   <div class="tvArea">
     <div class="left-div">
@@ -81,8 +64,7 @@
           name="Netflix Preview"
           autoplay
           loop
-          [muted]="true"
-        >
+          [muted]="true">
           <source src="../assets/video1.m4v" type="video/mp4" />
         </video>
       </div>
@@ -91,6 +73,7 @@
       </div>
     </div>
   </div>
+  
   <!-- section 3 watch everywhere -->
   <div class="watch-everywhere-section">
     <div class="left-div-watch-everywhere">
@@ -100,8 +83,7 @@
           name="Netflix Preview"
           autoplay
           loop
-          [muted]="true"
-        >
+          [muted]="true">
           <source src="../assets/video2.m4v" type="video/mp4" />
         </video>
       </div>
@@ -115,6 +97,7 @@
       </h3>
     </div>
   </div>
+
   <!-- section 4 kids -->
   <div id="kids-section">
     <div id="left-div-kids">
@@ -125,7 +108,7 @@
       </p>
     </div>
     <div id="right-div-kids">
-      <img src="../assets/create_profile.png" alt="" />
+      <img src="../assets/kidsNew.png" alt="" />
     </div>
   </div>
 
@@ -137,8 +120,7 @@
         <img src="../assets/boxshot.png" id="download-overlay-image" alt="" />
         <span id="stranger-text"
           >Stranger Things
-          <p id="downloading-stragner-text">Downloading...</p></span
-        >
+          <p id="downloading-stragner-text">Downloading...</p></span>
         <img
           src="../assets/download-icon.gif"
           alt=""
@@ -159,8 +141,8 @@
       <br />
       <ul class="faq-list">
         <li class="faq-item">
-          <input type="radio" name="faq-list" id="first" />
-          <label class="button-faq" for="first">What is Netflix?</label>
+          <input type="radio" name="faq-list" id="first" class="faqDropdown"/>
+          <label class="button-faq faqDropdown" for="first">What is Netflix?</label>
           <div class="content">
             <p class="content-para">
               Netflix is a streaming service that offers a wide variety of
@@ -175,43 +157,19 @@
           </div>
         </li>
         <li class="faq-item">
-          <input type="radio" name="faq-list" id="second" />
-          <label for="second" class="button-faq">
+          <input type="radio" name="faq-list" id="second" class="faqDropdown"/>
+          <label for="second" class="button-faq faqDropdown">
             How much does Netflix cost?
           </label>
           <div class="content">
             <p class="content-para">
-              Watch Netflix on your smartphone, tablet, Smart TV, laptop, or
-              streaming device, all for one fixed monthly fee. Plans range from
-              $6.99 to $19.99 a month. No extra costs, no contracts.
+              Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from $22.99 to $6.99 a month. No extra costs, no contracts.
             </p>
           </div>
         </li>
         <li class="faq-item">
-          <input type="radio" name="faq-list" id="third" />
-          <label for="third" class="button-faq">
-            What’s different on an ad-supported plan?
-          </label>
-          <div class="content">
-            <p class="content-para" id="content-para-ad-support">
-              An ad-supported plan is a great way to enjoy movies and TV shows
-              at a lower price. You can stream your favorites with limited ad
-              breaks (some location and device restrictions apply). Downloads
-              are not supported and a limited number of movies and TV shows are
-              not available due to licensing restrictions.
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                id="learn-more"
-                >Learn more.</a
-              >
-            </p>
-          </div>
-        </li>
-        <li class="faq-item">
-          <input type="radio" name="faq-list" id="fourth" />
-          <label class="button-faq" for="fourth"> Where can I watch? </label>
+          <input type="radio" name="faq-list" id="fourth" class="faqDropdown"/>
+          <label class="button-faq" for="fourth" class="faqDropdown button-faq"> Where can I watch? </label>
           <div class="content">
             <p class="content-para">
               Watch anywhere, anytime. Sign in with your Netflix account to
@@ -229,8 +187,8 @@
           </div>
         </li>
         <li class="faq-item">
-          <input type="radio" name="faq-list" id="fifth" />
-          <label class="button-faq" for="fifth"> How do I cancel? </label>
+          <input type="radio" name="faq-list" id="fifth" class="faqDropdown"/>
+          <label class="button-faq faqDropdown" for="fifth"> How do I cancel? </label>
           <div class="content">
             <p class="content-para">
               Netflix is flexible. There are no pesky contracts and no
@@ -241,8 +199,8 @@
           </div>
         </li>
         <li class="faq-item">
-          <input type="radio" name="faq-list" id="sixth" />
-          <label class="button-faq" for="sixth">
+          <input type="radio" name="faq-list" id="sixth" class="faqDropdown"/>
+          <label class="button-faq faqDropdown" for="sixth">
             What can I watch on Netflix?
           </label>
           <div class="content">
@@ -254,8 +212,8 @@
           </div>
         </li>
         <li class="faq-item">
-          <input type="radio" name="faq-list" id="seventh" />
-          <label class="button-faq" for="seventh">
+          <input type="radio" name="faq-list" id="seventh"  class="faqDropdown"/>
+          <label class="button-faq faqDropdown" for="seventh">
             Is Netflix good for kids?
           </label>
           <div class="content">
@@ -272,57 +230,46 @@
           </div>
         </li>
       </ul>
-      <p id=" ">
-        Ready to watch? Enter your email to creatye or retart your membership.
-      </p>
-      <br />
-      <span
-        ><input
-          type="email"
-          name=""
-          id=""
-          class="email-input"
-          placeholder="Email address"
-        /><button class="get_started">Get Started ></button></span
-      >
+      <div class="ready_container">
+        <p>
+          Ready to watch? Enter your email to creatye or retart your membership.
+        </p>
+        <br />
+        <span>
+        <div class="email-section">
+          <span id="email-form">
+          <div class="form-floating mb-2 email" id="email2">
+            <input type="email" class="form-control email-input" id="floatingInput2" placeholder="Email address">
+            <label for="floatingInput2" class="email-input-floating">Email address</label>
+            <button class="get_started">Get Started ></button>
+          </div>
+          </span>
+        </div>
+        </span>
+      </div>
     </div>
   </div>
 
   <!-- section 7 contact -->
   <div class="contact">
     <p id="questions">
-      Questions? Call <a href="#" id="phone-number"> 1-866-579-7172</a>
+      Questions? Call <a href="#" id="phone-number"> 1-844-505-2993</a>
     </p>
     <div class="contact-cols">
       <ul>
         <li><a href="#">FAQ</a></li>
-        <li><a href="#">Media Center</a></li>
-        <li><a href="#">Redeem Gift Card</a></li>
-        <li><a href="#">Privacy</a></li>
-        <li><a href="#">Speed Test</a></li>
-        <button
-          class="btn-outline-light dropdown-toggle mr-4 outline nohover all-buttons-navbar"
-          data-toggle="dropdown"
-          id="language-footer"
-          (click)="language()"
-        >
+        <li><a href="#">Investor Relations</a></li>
+        <li><a href="#">Buy Gift Card</a></li>
+        <li><a href="#">Cookie Preferences</a></li>
+        <li><a href="#">Legal Notices</a></li>
+        <button class="btn-outline-light dropdown-toggle mr-4 outline nohover all-buttons-navbar clear-button"
+          data-toggle="dropdown" id="language-footer">
           <i class="fa fa-globe"></i> English
         </button>
         <div class="dropdown-menu">
-          <a href="#" class="dropdown-item" lang="en" id="dropdown-op1"
-            >English</a
-          >
-          <a href="#" class="dropdown-item" lang="es" id="dropdown-op2"
-            >Español</a
-          >
+          <a href="#" class="dropdown-item" lang="en" id="dropdown-op3">English</a>
+          <a href="#" class="dropdown-item" lang="es" id="dropdown-op4">Español</a>
         </div>
-      </ul>
-      <ul>
-        <li><a href="#">Gift Card Terms</a></li>
-        <li><a href="#">Investor Relations</a></li>
-        <li><a href="#">Buy Gift Cards</a></li>
-        <li><a href="#">Cookie Preferences</a></li>
-        <li><a href="#">Legal Notices</a></li>
       </ul>
       <ul>
         <li><a href="#">Help Center</a></li>
@@ -337,6 +284,13 @@
         <li><a href="#">Terms of Use</a></li>
         <li><a href="#">Contact Us</a></li>
         <li><a href="#">Do Not Sell or Share My Personal Information</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Media Center</a></li>
+        <li><a href="#">Redeem Gift Cards</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Speed Test</a></li>
+        <li><a href="#">Ad Choices</a></li>
       </ul>
     </div>
   </div>
