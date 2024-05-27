@@ -307,6 +307,13 @@ input{
   height: 25.31px;
 }
 
+.tvContainerLeft{
+  width: 950px;
+  position: relative;
+  top: -101px !important;
+  z-index: 1;
+}
+
 .tv-preview-div {
   top: 1%;
   left: 44.5%;
@@ -318,6 +325,13 @@ input{
   height: 100%;
   padding-top: 10px;
   margin-left: 250px;
+}
+
+.tvDetail{
+  font-size: 1.2rem !important;
+  font-weight: normal !important;
+  margin-right: 500px;
+  width: 640px !important;
 }
 
 .blank-tv {
@@ -382,6 +396,10 @@ input{
   margin-top: -460px;
   margin-left: 100px;
 }
+
+/* .unlmtStream{
+   font-size: 1.3rem !important;
+} */
 /* watch anywhere section end */
 /*******************************/
 
@@ -578,8 +596,12 @@ p {
   text-align: left;
   padding: 0 20px;
   max-height: 0;
-  margin-left: 500px;
+  max-width: 63.5em;
+  /* margin-left: 500px; */
   overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s;
+  /* border: 5px solid red; */
+  margin-left: 106.15em;
 }
 
 .content {

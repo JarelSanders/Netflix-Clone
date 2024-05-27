@@ -21,14 +21,8 @@
 body {
   font-family: "Martel Sans", sans-serif;
   background-image: linear-gradient(rgba(28, 27, 27, 0.8), rgb(10, 9, 9)),
-    url(./assets/US-en-20240122-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    url(./assets/MainBackgroundTop);
   background-color: var(--netflixBlack);
-  /* background-size: contain; */
-  /* background-position: center;*/
-   /* background-position: 150% 10%;   */
-     object-fit:cover;
-   /* object-position:5% 5%; */
-   /* background-size: 100%; */
-   background-position: center top;
-   /* z-index: 500; */
+  object-fit:cover;
+  background-position: center top;
 }
