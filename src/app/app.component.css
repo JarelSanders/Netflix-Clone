@@ -100,7 +100,6 @@ input{
 }
  
 #learn:hover, #learn:visited {
-  /* text-decoration: none; */
   text-decoration: underline;
   background-color: #620e3d;
   color: #1c6efd;
@@ -397,9 +396,7 @@ input{
   margin-left: 100px;
 }
 
-/* .unlmtStream{
-   font-size: 1.3rem !important;
-} */
+
 /* watch anywhere section end */
 /*******************************/
 
