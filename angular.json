@@ -102,5 +102,8 @@
       }
     }
   },
-  "defaultProject": "NetflixClone"
+  "defaultProject": "NetflixClone",
+  "cli": {
+    "analytics": false
+  }
 }
