@@ -3,14 +3,20 @@
   <div class="navigationBar">
     <img src="../assets/logo.png" alt="" />
     <div class="main-buttons btn-group">
-      <button class="btn btn-light  clear-button" data-toggle="dropdown" id="language">
-        <i class="fa fa-globe"></i> English &#9660;	
+      <button id="language"
+        class="btn btn-light  clear-button" data-toggle="dropdown" id="language">
+        <span class="language-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 16 16" width="16" height="16" data-icon="LanguagesSmall" aria-hidden="true">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M10.7668 5.33333L10.5038 5.99715L9.33974 8.9355L8.76866 10.377L7.33333 14H9.10751L9.83505 12.0326H13.4217L14.162 14H16L12.5665 5.33333H10.8278H10.7668ZM10.6186 9.93479L10.3839 10.5632H11.1036H12.8856L11.6348 7.2136L10.6186 9.93479ZM9.52722 4.84224C9.55393 4.77481 9.58574 4.71045 9.62211 4.64954H6.41909V2H4.926V4.64954H0.540802V5.99715H4.31466C3.35062 7.79015 1.75173 9.51463 0 10.4283C0.329184 10.7138 0.811203 11.2391 1.04633 11.5931C2.55118 10.6795 3.90318 9.22912 4.926 7.57316V12.6667H6.41909V7.51606C6.81951 8.15256 7.26748 8.76169 7.7521 9.32292L8.31996 7.88955C7.80191 7.29052 7.34631 6.64699 6.9834 5.99715H9.06968L9.52722 4.84224Z" fill="currentColor"></path>
+        </svg>
+        </span> English &#9660;	
       </button>
       <div class="dropdown-menu">
         <a href="#" class="dropdown-item" lang="en" id="dropdown-op1">English</a>
         <a href="#" class="dropdown-item" lang="es" id="dropdown-op2">Español</a>
       </div>
-      <button class="btn btn-danger mr-4 btn-sm all-buttons-navbar">
+      <button id="sign-in"
+      class="btn btn-danger mr-4 btn-sm all-buttons-navbar">
         Sign-in
       </button>
     </div>
@@ -19,11 +25,11 @@
   <!-- section 1 get started-->
   <div class="top-middle-container">
     <div class="top-middle">
-      <p id="unlimitedMovies">Unlimited movies, TV shows, and more.</p>
-      <p id="watch-anywhere">Watch anywhere. Cancel anytime.</p>
+      <p id="unlimitedMovies">Unlimited movies, TV shows, and more</p>
+      <p id="start-plan">Starts at $7.99. Cancel anytime.</p>
       <br />
       <p id="readyToWatch">
-        Ready to watch? Enter your email to creatye or retart your membership.
+        Ready to watch? Enter your email to create or retart your membership.
       </p>
       <br />
       <div class="email-section">
@@ -37,16 +43,26 @@
       </div>
     </div>
   </div>
+
+  <div id="curve-container">
+
+  </div>
+
   <div id="pricePlan">
-    <div class="popcorn">
+    <div id="popcorn">
       <img id= 'popcornImage' src="../assets/popcorn.png" alt="popcorn">
     </div>
-    <div class="priceInfo">
-      <p>The Netflix you love for just $6.99.</p>
-      <p id="ads">Get the Standard with ads plan.</p>
-      <a href="http://" target="_blank" rel="noopener noreferrer" id="learn"> Learn More   ></a>
+    <div id="priceInfo">
+      <div id="price-text">
+        <p id="price">The Netflix you love for just $7.99.</p>
+        <p id="ads">Get the Standard with ads plan.</p>
+      </div>
+      <div id="learn-more-popcorn">
+        <button href="http://" target="_blank" rel="noopener noreferrer" id="learn"> Learn More</button>
+      </div>
     </div>
   </div>
+
 
   <!-- section 2 enjoy tv-->
   <div class="tvArea">
@@ -262,7 +278,8 @@
         <li><a href="#">Buy Gift Card</a></li>
         <li><a href="#">Cookie Preferences</a></li>
         <li><a href="#">Legal Notices</a></li>
-        <button class="btn-outline-light dropdown-toggle mr-4 outline nohover all-buttons-navbar clear-button"
+        <button 
+        class="btn-outline-light dropdown-toggle mr-4 outline nohover all-buttons-navbar clear-button"
           data-toggle="dropdown" id="language-footer">
           <i class="fa fa-globe"></i> English
         </button>

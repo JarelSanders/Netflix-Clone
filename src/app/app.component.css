@@ -33,6 +33,7 @@
 :is(.outline):hover {
   background-color: rgba(0, 0, 0, 0.25);
   color: var(--netflixWhite);
+  
 }
 
 .dropdown-menu {
@@ -51,6 +52,20 @@ a:hover {
 
 }
 
+/* language nav bar button  */
+#language{
+  border-radius: 5px;
+  font-size: 12px;
+  width: 130px;
+  /* height: 30px; */
+  /* display: flex; */
+  /* justify-content: flex-start; */
+}
+
+.language-icon{
+  /* margin-right: 8px; */
+}
+
 /* English dropdown item */
 #dropdown-op1 {
   margin-top: -8px;
@@ -67,6 +82,12 @@ a:hover {
   padding: 0 1.75rem;
   font-size: small;
   color: var(--netflixWhite);
+}
+
+/* sign-in nav bar button  */
+#sign-in{
+  border-radius: 5px;
+  width: 90px;
 }
 /*****    navbar end     *****/
 /*****************************/
@@ -94,9 +115,13 @@ input{
 }
 
 #unlimitedMovies {
+  /* border: 5px solid red; */
   margin-bottom: 0;
   font-family: "Martel Sans", sans-serif;
-  font-size: 2.5rem;
+  font-size: 2.9rem;
+  width: 14em;
+  /* position: relative; */
+  margin-left: 25%;
 }
  
 #learn:hover, #learn:visited {
@@ -105,7 +130,7 @@ input{
   color: #1c6efd;
 }
 
-#watch-anywhere {
+#start-plan {
   display: inline-block;
   overflow: hidden;
   text-align: center;
@@ -115,7 +140,7 @@ input{
   margin-top: 10px;
   margin-bottom: 13px;
   font-weight: lighter !important;
-  font-size: 20px;
+  font-size: 18px;
   color: #ffffff;
 }
 
@@ -211,39 +236,78 @@ input{
 }
 
 #ads{
+  display: inline-flex;
   font-size: 13px;
   margin-bottom: 10px;
   margin-top: 10px;
 }
 
-#pricePlan{
-  height: 150px;
-  z-index: 100;
-  display: flex;
-  justify-content: center;
+#curve-container {
+  position: relative;
+  width: 100%;
+  height: 150px; /* Adjust height to control curve depth */
   background: rgb(14, 27, 79);
-    background: radial-gradient(
-        51.39% 511.66% at 47.68% -217.91%,
-        #ff9900 0%,
-        #e50914 17.27%,
-        #0e1b4f 79.44%,
-        #000413 100% );
+  background: radial-gradient(
+    51.39% 511.66% at 47.68% -217.91%,
+    #ff9900 0%,
+    #e50914 17.27%,
+    #0e1b4f 79.44%,
+    #000413 100%
+  );
+  border-top-left-radius: 50% 100px;
+  border-top-right-radius: 50% 100px;
   box-shadow: 0px -8px 25px rgba(0, 0, 0, 0.5);
-  border-radius: 4px;
-  color: white;
-  padding-bottom: -500px;
- 
+  /* z-index: 0; */
+}
+
+#pricePlan {
+  display: flex;
+  position: absolute;                             
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  /* height: 10%; */
+  height: 20%;
+  text-align: center;
+  z-index: 1;
+  border: 5px solid red;
+}
+
+#price{
+  line-height: 1px;
+}
+
+#price-text{
+  border: 5px solid green;
+}
+
+#learn-more-popcorn{
+  border: 5px solid yellow;
+  width: 189px;
+  height: 120px;
+  /* width: 20px;
+  height: 10px; */
+}
+
+#learn{
+    background-color: #424257;
+    width: 169px;
+    height: 60px;
+    border-radius: 13%;
+    font-size: 1.4em
+;
 }
 
 #popcornImage{
-  height: 100px;
+  height: 80px;
 }
 
-.popcorn{
+#popcorn{
   margin-top: 20px;
 }
 
-.priceInfo{
+#priceInfo{
   margin-left: 0;
   padding-left: 0;
   padding-top: 35px;
@@ -304,6 +368,7 @@ input{
   margin-bottom: auto;
   width: 843px;
   height: 25.31px;
+  font-size: .85em;
 }
 
 .tvContainerLeft{
@@ -653,10 +718,11 @@ input[type="radio"] {
   border-bottom: 10px solid var(--netflixWhite) !important;
   display: contents;
   font-size: 0.9rem;
+  background-color: #424257;
 }
 
 #learn-more:link {
-  color: var(--netflixWhite);
+  /* color: var(--netflixWhite); */
 }
 
 :is(#learn-more):hover {
@@ -732,6 +798,7 @@ li a {
 
 #language-footer {
   margin-top: 50px;
+  
 }
 
 :is(#phone-number):hover {

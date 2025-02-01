@@ -21,8 +21,10 @@
 body {
   font-family: "Martel Sans", sans-serif;
   background-image: linear-gradient(rgba(28, 27, 27, 0.8), rgb(10, 9, 9)),
-    url(./assets/MainBackgroundTop);
+    url(./assets/Background_large.jpg);
   background-color: var(--netflixBlack);
   object-fit:cover;
-  background-position: center top;
+  /* background-position: center top; */
+    background-position: right 1px bottom 30px;
+
 }
